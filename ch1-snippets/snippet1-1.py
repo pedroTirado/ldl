@@ -15,13 +15,39 @@ def compute_output(w,x):
         return 1
 
 def main():
-    # single-neuron perceptron w/ 3 inputs
-    x = [1,2,3] # inputs
-    w = [4,5,-6] # weights
+    # single-neuron perceptron w/ 3 inputs (2 inputs + bias input)
 
-    y0 = compute_output(w, x)
+    # 1st combo
+    x1 = [1,-1,-1] # inputs (bias input must be 1)
+    w1 = [0.9,-0.6,-0.5] # weights
 
-    print(y0)
+    y1 = compute_output(w1, x1)
+
+    print(y1)
+
+    # 2nd combo
+    x2 = [1,1,-1] # inputs (bias input must be 1)
+    w2 = [0.9,-0.6,-0.5] # weights
+
+    y2 = compute_output(w2, x2)
+
+    print(y2)
+
+    # 3rd combo
+    x3 = [1,-1,1] # inputs (bias input must be 1)
+    w3 = [0.9,-0.6,-0.5] # weights
+
+    y3 = compute_output(w3, x3)
+
+    print(y3)
+
+    # 4th combo
+    x4 = [1,1,1] # inputs (bias input must be 1)
+    w4 = [0.9,-0.6,-0.5] # weights
+
+    y4 = compute_output(w4, x4)
+
+    print(y4)
 
 if __name__ == "__main__":
     main()
