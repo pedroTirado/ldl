@@ -1,3 +1,7 @@
+"""
+Perceptron learning function
+"""
+
 # first element in vector x must be 1
 # length of w & x must be n+1 for neuron w/ n inputs
 
